@@ -1,14 +1,10 @@
 function firstWord(s) {
   // your code here
-	if (!s|| !s.includes(' ')) {
-        return s;
+	if (!s) {
+        return '';
     }
 
-    const spaceIndex = s.indexOf(' ');
-    
-    const firstWord = s.substring(0, spaceIndex);
-    
-    return firstWord;
+    return s.trim().split(' ')[0];
 }
 
 // Do not change the code below
